@@ -1,6 +1,6 @@
 {
   "app": {
-    "title": "ZaUI Coffee",
+    "title": "Patronus",
     "headerColor": "",
     "textColor": "black",
     "statusBarColor": "#ffffff",
@@ -9,7 +9,8 @@
     "selfControlLoading": false,
     "hideAndroidBottomNavigationBar": false,
     "hideIOSSafeAreaBottom": false,
-    "actionBarHidden": true
+    "actionBarHidden": true,
+    "textAlign": "left"
   },
   "debug": false,
   "listCSS": [],
@@ -23,7 +24,7 @@
     "/404"
   ],
   "template": {
-    "primaryColor": "#006af5",
+    "primaryColor": "#000000",
     "prefixCurrencySymbol": false,
     "currencySymbol": "đ",
     "headerLogo": ""

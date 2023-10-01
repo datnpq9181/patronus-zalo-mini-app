@@ -83,7 +83,6 @@ export const Banner: FC = () => {
                   <Button onClick={handleClicked} disabled={isLoading}>
                     {isLoading ? "Loading..." : "Nhấn để đăng ký / đăng nhập"}
                   </Button>
-                  <br />
                 </>
               )}
             </Box>

@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { Box, Header, Text } from "zmp-ui";
 import { useRecoilValueLoadable } from "recoil";
 import { userState } from "state";
+import { Page, Icon } from "zmp-ui";
 import logo from "static/logo.png";
 import appConfig from "../../../app-config.json";
 import { getConfig } from "utils/config";
@@ -24,7 +25,7 @@ export const Welcome: FC = () => {
               <Text.Title size="small">{appConfig.app.title}</Text.Title>
               {user.state === "hasValue" ? (
                 <Text size="xxSmall" className="text-gray">
-                  Welcome, {user.contents.name}!
+                  Xin chào, {user.contents.name}!
                 </Text>
               ) : (
                 <Text>...</Text>

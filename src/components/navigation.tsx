@@ -10,14 +10,18 @@ const tabs: Record<string, MenuItem> = {
     label: "Trang chủ",
     icon: <Icon icon="zi-home" />,
   },
-  "/notification": {
-    label: "Thông báo",
-    icon: <Icon icon="zi-notif" />,
+  "/category": {
+    label: "Đổi quà",
+    icon: <Icon icon="zi-auto-solid" />,
   },
   "/cart": {
     label: "Giỏ hàng",
     icon: <CartIcon />,
     activeIcon: <CartIcon active />,
+  },
+  "/notification": {
+    label: "Thông báo",
+    icon: <Icon icon="zi-notif" />,
   },
   "/profile": {
     label: "Cá nhân",
@@ -27,7 +31,7 @@ const tabs: Record<string, MenuItem> = {
 
 export type TabKeys = keyof typeof tabs;
 
-export const NO_BOTTOM_NAVIGATION_PAGES = ["/search", "/category"];
+export const NO_BOTTOM_NAVIGATION_PAGES = ["/search"];
 
 export const Navigation: FC = () => {
   const [activeTab, setActiveTab] = useState<TabKeys>("/");

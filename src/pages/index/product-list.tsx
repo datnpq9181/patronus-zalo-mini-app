@@ -10,7 +10,7 @@ export const ProductListContent: FC = () => {
   const products = useRecoilValue(productsState);
 
   return (
-    <Section title="Danh sách sản phẩm">
+    <Section title="Danh sách ưu đãi">
       <Box className="grid grid-cols-2 gap-4">
         {products.map((product) => (
           <ProductItem key={product.id} product={product} />
@@ -24,7 +24,7 @@ export const ProductListFallback: FC = () => {
   const products = [...new Array(12)];
 
   return (
-    <Section title="Danh sách sản phẩm">
+    <Section title="Danh sách ưu đãi">
       <Box className="grid grid-cols-2 gap-4">
         {products.map((_, i) => (
           <ProductItemSkeleton key={i} />
